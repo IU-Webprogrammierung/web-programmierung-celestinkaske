@@ -33,3 +33,27 @@
     height: 280px;
     padding-top: 12px;
 }
+
+.menu-burger1{
+    width: 30px;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+}
+
+.menu-burger2{
+    width: 30px;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+}
+
+.menu-burger3{
+    width: 30px;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+}
