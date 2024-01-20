@@ -1,46 +1,46 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
+    padding: 0;
+  }
 
-.navbar{
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Set a default background color */
+    transition: background-color 0.5s ease; /* Add transition effect for background color change */
+  }
+
+  /* Navbar styles */
+  .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-}
+    background-color: #333;
+    padding: 20px 30px;
+    margin-bottom: 60px;
+    
+  }
 
-.nav-list{
-    list-style-type: none;
-}
-
-.nav-list .list-item{
-    display:inline-block;
-    padding: 10px 20px;
-}
-
-.navbar a{
-    font-family: Arial, Helvetica, sans-serif;
+  .navbar a {
+    color: white;
     text-decoration: none;
-}
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
 
-.navbar a:hover{
-    color: #ff4500;
-}
+  .navbar a:hover {
+    background-color: #555;
+  }
 
-.icon{
-    height: 280px;
-    padding-top: 12px;
-}
+  .navbar-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
 
-.menu-burger{
-    width: 30px;
-    background-color: black;
-    height: 3px;
-    margin-bottom: 4px;
-    border-radius: 16px;
-}
+  /* Main body style */
 
 @media all and (max-width: 480px) {
    
