@@ -10,6 +10,17 @@ body {
   transition: background-color 0.5s ease;
 }
 
+/* Text Styles*/
+
+.table {
+  line-height: 30px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 100;
+}
+
 /* Navbar styles */
 
 .navbar {
@@ -54,9 +65,9 @@ ul.breadcrumb li {
 }
 
 ul.breadcrumb li+li:before {
-  padding: 4px;
+  padding: 5px;
   color: black;
-  content: ">";
+  content: "/";
 }
 
 ul.breadcrumb li a {
@@ -73,7 +84,14 @@ ul.breadcrumb li a:hover {
 
 .intro {
   padding: 10px 48px;
+  width: 1200px;
 } 
+
+.intro p {
+  width: 1800px;
+} 
+
+  /* Homepage */
 
 .table-container {
   display: flex;
@@ -92,6 +110,62 @@ ul.breadcrumb li a:hover {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+  /* Collaboration */
+
+#intro {
+  margin: 0px 48px;
+}
+
+#caroussel {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 40px;
+  margin-top: 40px; ;
+}
+
+.call-to-action {
+  background-color: #3498db;
+  color: #fff;
+  padding: 40px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 8;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-box {
+  flex: 0 0 30%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0px 10px;
+  justify-content: center;
+}
+
+.carousel-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
 
 
 /* Queries */
@@ -110,6 +184,12 @@ ul.breadcrumb li a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .table-cell {
+      flex: 1 0 100%;
+  }
+}
+
 /* Contact body style */
 
 form {
@@ -121,8 +201,7 @@ label {
   font-weight: bold;
 }
 
-input,
-textarea {
+input,textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
