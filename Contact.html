@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celestin's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div class="header">
-        <div class="navbar">
-            <div class="left-section">
-                <a href="Index.html">Cele's Portfolio</a>
-            </div>
-            <div class="right-section">
-                <a href="About.html">About</a>
-                <a href="Portfolio.html">Projects</a>
-                <a href="Collaboration.html">Collaboration</a>
-                <a href="Contact.html">Contact</a>
-                <button class="navbar-toggle" onclick="toggleDarkMode()"><img src="" alt="">Button</button>
-            </div>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="left-section">
+          <a href="Index.html">Cele's Portfolio</a>
         </div>
-
-        <ul class="breadcrumb">
-            <li><a href="Index.html">Home</a></li>
-            <li>Contact</li>
-        </ul>
-
-        <div class="intro">
-            <h1>Your UX Journey Starts with a Conversation! </h1>
-            <h4>Embark on a transformative journey in human-centered design with me. Let's collaborate on a project that
-                places humanity at its core, crafting meaningful and user-centric experiences. Together, we'll explore
-                innovative solutions that not only meet design objectives but also enhance the overall well-being of
-                users.</h4>
+        <div class="right-section">
+          <a href="About.html">About</a>
+          <a href="Portfolio.html">Projects</a>
+          <a href="Collaboration.html">Collaboration</a>
+          <a href="Contact.html">Contact</a>
+          <button class="navbar-toggle" onclick="toggleDarkMode()">
+            <img src="" alt="" />Button
+          </button>
         </div>
-    </div>
+      </div>
+    </header>
 
-    <div class="container-contact">
+    <main>
+      <ul class="breadcrumb">
+        <li><a href="Index.html">Home</a></li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="intro">
+        <h1>Your UX Journey Starts with a Conversation!</h1>
+        <h4>
+          Embark on a transformative journey in human-centered design with me.
+          Let's collaborate on a project that places humanity at its core,
+          crafting meaningful and user-centric experiences. Together, we'll
+          explore innovative solutions that not only meet design objectives but
+          also enhance the overall well-being of users.
+        </h4>
+      </div>
+
+      <div class="container-contact">
         <h2>Contact Me</h2>
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </form>
-    </div>
+      </div>
+    </main>
 
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
