@@ -75,7 +75,8 @@ ul.breadcrumb {
   margin: auto;
   list-style: none;
   margin-top: 16px;
-  font-size: 14px;
+  margin-left: 16px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -149,7 +150,17 @@ img {
   margin: 0 auto;
 }
 
+/* Projects */
+
+.linktoproject {
+  text-decoration: none;
+}
+
 /* About */
+
+.motivation {
+  margin-bottom: 96px;
+}
 
 .practicalknowledge {
   display: flex;
@@ -159,6 +170,22 @@ img {
   margin-right: 96px;
   margin-bottom: 88px;
   line-height: 1.6;
+}
+
+.practicalknowledge h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.practicalknowledge h5 {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+
+.practicalknowledge a {
+  font-size: 12px;
 }
 
 .designphilosophy {
@@ -187,7 +214,7 @@ img {
   margin-left: 96px;
   margin-right: 96px;
   margin-bottom: 88px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .background a {
@@ -206,6 +233,7 @@ img {
   text-transform: uppercase;
   font-weight: 50;
   font-size: 20px;
+  flex-wrap: wrap;
 }
 
 .subtitle {
@@ -328,28 +356,25 @@ img {
   transform: scale(1.05);
 }
 
-/* Queries */
-
-@media all and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .menu {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .table-cell {
-    flex: 1 0 100%;
-  }
-}
-
 /* Contact body style */
+
+.contact-intro {
+  margin-bottom: 48px;
+  margin-top: 96px;
+}
+
+.contact-intro h1 {
+  margin-bottom: 24px;
+}
+
+.contact-intro p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.container-contact h2 {
+  margin-bottom: 24px;
+}
 
 form {
   display: grid;
@@ -377,6 +402,27 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+/* Queries */
+
+@media all and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table-cell {
+    flex: 1 0 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
