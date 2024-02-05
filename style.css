@@ -164,7 +164,8 @@ ul.breadcrumb li a:hover {
 }
 
 .intro p {
-  font-size: 28px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .description {
@@ -198,6 +199,20 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.table h2 {
+  margin-bottom: 12px;
+}
+
+.table p {
+  margin-bottom: 12px;
+}
+
+.subskills {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 /* Projects */
@@ -325,6 +340,14 @@ img {
 
 .motivation {
 }
+
+.main-body-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.
 
 /* Collaboration */
 
