@@ -196,7 +196,7 @@ ul.breadcrumb li a:hover {
 }
 
 .table-cell-2 {
-  flex: 2;
+  flex: 1;
   box-sizing: border-box;
 }
 
