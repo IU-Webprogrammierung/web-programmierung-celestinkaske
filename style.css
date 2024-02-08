@@ -18,7 +18,7 @@ main,
 .navbar {
   max-width: 1200px;
   margin: auto;
-  padding: 4px;
+  padding: 16px;
 }
 
 header {
@@ -184,6 +184,7 @@ ul.breadcrumb li a:hover {
 
 .table-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   width: 100%;
   margin-bottom: 10px;
@@ -192,6 +193,17 @@ ul.breadcrumb li a:hover {
 .table-cell {
   flex: 1;
   box-sizing: border-box;
+}
+
+.table-cell-2 {
+  flex: 2;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .table-cell-2 {
+    order: 2;
+  }
 }
 
 img {
@@ -255,12 +267,19 @@ img {
 }
 
 .practicalknowledge {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: auto;
   margin-bottom: 104px;
   line-height: 1.6;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .practicalknowledge {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .practicalknowledge h3 {
@@ -275,7 +294,7 @@ img {
   margin-bottom: 2px;
 }
 
-.practicalknowledge a {
+.practicalknowledge p {
   font-size: 12px;
 }
 
@@ -313,9 +332,22 @@ img {
   width: 100%;
 }
 
+.skills-n-roles {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+  .skills-n-roles {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
 .skills {
   display: flex;
-  justify-content: space-around;
+  gap: 8px;
+  justify-content: center;
   margin-bottom: 48px;
   text-transform: uppercase;
   font-weight: 200;
@@ -331,7 +363,9 @@ img {
 
 .roles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 48px;
   text-transform: uppercase;
   font-weight: 200;
