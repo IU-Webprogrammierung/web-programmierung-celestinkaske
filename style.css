@@ -25,6 +25,12 @@ header {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    padding: 50px;
+  }
+}
+
 /* Text Styles*/
 
 .table {
@@ -59,7 +65,7 @@ header {
   border-radius: 4px;
 }
 
-.navbar a.active {
+.right-section a.active {
   text-decoration: underline;
   text-decoration-color: orange;
   background-color: #01447e;
@@ -68,11 +74,48 @@ header {
 }
 
 .navbar-toggle {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
+  display: none;
+}
+
+.navbar-toggle .bar {
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 3px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .navbar {
+    padding: 20px 25px;
+  }
+
+  .right-section {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    top: 10%;
+    right: 0;
+  }
+
+  .right-section a {
+    padding: 12px 15px;
+  }
+
+  .right-section.active {
+    display: flex;
+  }
 }
 
 /* Breadcrumb styles */
@@ -106,6 +149,12 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 600px) {
+  ul.breadcrumb {
+    display: none;
+  }
+}
+
 /* Main body style */
 
 .start {
@@ -114,6 +163,12 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   margin-top: 300px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .start {
+    margin-top: 20px;
+  }
 }
 
 .start p {
@@ -164,6 +219,12 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   margin-top: 300px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-top: 20px;
+  }
 }
 
 .intro h1 {
@@ -272,6 +333,12 @@ img {
   justify-content: center;
   margin-top: 300px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .start-about {
+    margin-top: 20px;
+  }
 }
 
 .start-about p {
