@@ -121,6 +121,39 @@ header {
   }
 }
 
+.left-section a:before {
+  animation: continue 3.5s infinite linear;
+  content: "";
+  position: absolute;
+  height: 0.2em;
+  width: 30px;
+  background: linear-gradient(
+    to right,
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7
+  );
+  background-size: 200% 100%;
+  margin-top: 26px;
+  transition: 1.5s;
+}
+
+@keyframes continue {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.left-section a:hover:before {
+  background-position: 100% 0%;
+}
+
 /* Breadcrumb styles */
 
 ul.breadcrumb {
@@ -171,6 +204,7 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width: 600px) {
   .start {
     margin-top: 20px;
+    margin-bottom: 72px;
   }
 }
 
@@ -227,6 +261,7 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width: 600px) {
   .intro {
     margin-top: 20px;
+    margin-bottom: 24px;
   }
 }
 
@@ -275,6 +310,7 @@ ul.breadcrumb li a:hover {
   border-width: 1px;
   overflow: hidden;
   border-color: #333;
+  box-shadow: 5px 5px 5px;
 }
 
 .table-cell-wireframe:hover {
@@ -490,6 +526,12 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .container-title {
+    margin-top: 20px;
+  }
+}
+
 .container-title p {
   font-weight: 200;
   margin-left: 96px;
@@ -601,6 +643,12 @@ img {
 .contact-intro {
   margin-bottom: 48px;
   margin-top: 96px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-intro {
+    margin-top: 20px;
+  }
 }
 
 .contact-intro h1 {
