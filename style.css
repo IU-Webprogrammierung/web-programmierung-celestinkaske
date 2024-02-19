@@ -25,15 +25,25 @@ header {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+}
+
 /* Text Styles*/
 
 .table {
-  line-height: 30px;
+  line-height: 2;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 100;
+}
+.subtitle h3 {
+  font-size: 48px;
+  margin-bottom: 50px;
 }
 
 /* Navbar styles */
@@ -42,7 +52,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
 }
 
 .navbar a {
@@ -60,12 +69,93 @@ header {
   border-radius: 4px;
 }
 
+.right-section a.active {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
 .navbar-toggle {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
+  display: none;
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-toggle .bar {
+  height: 4px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 3px 0px;
+}
+
+.navbar-toggle #close-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .navbar {
+  }
+
+  .right-section {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    top: 70px;
+    left: 0;
+  }
+
+  .right-section a {
+    padding: 12px 15px;
+  }
+
+  .right-section.active {
+    display: flex;
+  }
+}
+
+.left-section a:before {
+  animation: continue 4.5s infinite linear;
+  content: "";
+  position: absolute;
+  height: 0.2em;
+  width: 30px;
+  background: linear-gradient(
+    to right,
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7
+  );
+  background-size: 200% 100%;
+  margin-top: 26px;
+  transition: 1.5s;
+}
+
+@keyframes continue {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.left-section a:hover:before {
+  background-position: 100% 0%;
 }
 
 /* Breadcrumb styles */
@@ -99,19 +189,33 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 600px) {
+  ul.breadcrumb {
+    display: none;
+  }
+}
+
 /* Main body style */
 
 .start {
   width: auto;
   height: 450px;
   justify-content: center;
-  margin-top: 300px;
-  margin-bottom: 150px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .start {
+    margin-top: 20px;
+    margin-bottom: 400px;
+  }
 }
 
 .start p {
-  line-height: 1.6;
-  font-weight: 200;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 28px;
 }
 
 .start h1.intro-subitle {
@@ -123,13 +227,8 @@ ul.breadcrumb li a:hover {
   font-size: 48px;
 }
 
-.intro-title p {
-  font-size: 48px;
-}
-
-.intro-subitle {
-  font-weight: 50;
-  font-size: 28px;
+.intro-subtitle {
+  margin-bottom: 38px;
 }
 
 .description {
@@ -142,6 +241,7 @@ ul.breadcrumb li a:hover {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 12px;
+  font-style: italic;
 }
 
 .description p {
@@ -155,8 +255,15 @@ ul.breadcrumb li a:hover {
   width: auto;
   height: 450px;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-top: 20px;
+    margin-bottom: 400px;
+  }
 }
 
 .intro h1 {
@@ -164,8 +271,9 @@ ul.breadcrumb li a:hover {
 }
 
 .intro p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 300;
 }
 
 .description {
@@ -195,9 +303,34 @@ ul.breadcrumb li a:hover {
   box-sizing: border-box;
 }
 
-.table-cell-2 {
-  flex: 2;
+.table-cell-wireframe {
+  flex: 1;
   box-sizing: border-box;
+  transition: transform 0.5s;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  overflow: hidden;
+  border-color: #333;
+  box-shadow: 5px 5px 5px;
+}
+
+.table-cell-wireframe:hover {
+  flex: 1;
+  box-sizing: border-box;
+  transform: scale(1.05);
+}
+
+.table-cell-2 {
+  flex: 1;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+}
+
+.table-cell-2:hover {
+  flex: 1;
+  box-sizing: border-box;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
@@ -219,6 +352,11 @@ img {
 
 .table p {
   margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.table a {
+  font-size: 16px;
 }
 
 .subskills {
@@ -231,6 +369,16 @@ img {
 
 .linktoproject {
   text-decoration: none;
+  transition: 1s;
+  font-style: italic;
+}
+
+.linktoproject:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  font-style: normal;
 }
 
 /* About */
@@ -241,13 +389,20 @@ img {
   flex-wrap: wrap;
   height: 450px;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-bottom: 150px;
 }
 
+@media screen and (max-width: 600px) {
+  .start-about {
+    margin-top: 20px;
+  }
+}
+
 .start-about p {
-  line-height: 1.6;
-  font-weight: 200;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .start-about h1.intro-subitle {
@@ -271,8 +426,8 @@ img {
   gap: 32px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: auto;
-  margin-bottom: 104px;
-  line-height: 1.6;
+  margin-bottom: 140px;
+  line-height: 2;
   text-align: center;
 }
 
@@ -283,8 +438,7 @@ img {
 }
 
 .practicalknowledge h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 24px;
 }
 
 .practicalknowledge h5 {
@@ -296,6 +450,7 @@ img {
 
 .practicalknowledge p {
   font-size: 12px;
+  margin-bottom: 48px;
 }
 
 .designphilosophy {
@@ -336,6 +491,7 @@ img {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 48px;
 }
 
 @media screen and (max-width: 600px) {
@@ -350,7 +506,7 @@ img {
   justify-content: center;
   margin-bottom: 48px;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
   flex-wrap: wrap;
 }
@@ -368,7 +524,7 @@ img {
   gap: 8px;
   margin-bottom: 48px;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -379,6 +535,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  font-size: 48px;
 }
 
 /* Collaboration */
@@ -389,11 +546,24 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .container-title {
+    margin-top: 20px;
+  }
+}
+
 .container-title p {
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 96px;
   margin-right: 96px;
+  margin-bottom: 32px;
   line-height: 1.6;
+  font-size: 24px;
+}
+
+.container-title h1 {
+  font-size: 48px;
+  margin-top: 200px;
 }
 
 .container {
@@ -461,7 +631,7 @@ img {
 }
 
 .card-back {
-  background-color: #3498db;
+  background-color: #333;
   color: #fff;
   transform: rotateY(180deg);
 }
@@ -471,17 +641,28 @@ img {
   margin: 20px;
   margin-bottom: 100px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
   overflow: hidden;
 }
 
 .cta .cta-button {
   background-color: #333;
-  padding: 20px;
+  padding: 24px;
+  margin-top: 88px;
+  width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+  .cta .cta-button {
+    background-color: #333;
+    padding: 16px;
+    margin-top: 88px;
+    width: 300px;
+  }
 }
 
 .cta:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 /* Contact body style */
@@ -491,13 +672,19 @@ img {
   margin-top: 96px;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-intro {
+    margin-top: 20px;
+  }
+}
+
 .contact-intro h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .contact-intro p {
-  margin-bottom: 24px;
-  line-height: 1.6;
+  margin-bottom: 56px;
+  line-height: 2;
 }
 
 .container-contact h2 {
@@ -523,13 +710,19 @@ textarea {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: black;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 24px;
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 /* Queries */

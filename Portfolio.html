@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celestin's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,14 +20,21 @@
         <div class="left-section">
           <a href="Index.html">C.K.</a>
         </div>
-        <div class="right-section">
+        <div class="right-section" id="navLinks">
           <a href="About.html">About</a>
-          <a href="Portfolio.html">Projects</a>
+          <a href="Portfolio.html" class="active">Projects</a>
           <a href="Collaboration.html">Collaboration</a>
           <a href="Contact.html">Contact</a>
-          <button class="navbar-toggle" onclick="toggleDarkMode()">
-            <img src="" alt="" />Button
-          </button>
+        </div>
+        <div class="navbar-toggle" id="toggleButton">
+          <div id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div id="close-menu">
+            <div>X</div>
+          </div>
         </div>
       </div>
     </header>
@@ -62,17 +70,18 @@
               </p>
             </div>
             <p class="subskills">webdesign</p>
-            <a href="Webdesign.html" class="linktoproject"
-              >Go to the project -></a
-            >
+            <p>
+              Discover the
+              <a href="Webdesign.html" class="linktoproject">Bioladen Körnig</a>
+            </p>
           </div>
           <div class="table-cell-2">
-            <img src="Mockup 2.png" alt="Bild 3" />
+            <a href="Webdesign.html"><img src="Mockup 2.png" alt="Bild 3" /></a>
           </div>
         </div>
         <div class="table-row">
           <div class="table-cell-2">
-            <img src="Mockup.png" alt="Bild 3" />
+            <a href="AppDesign.html"> <img src="Mockup.png" alt="Bild 3" /></a>
           </div>
           <div class="table-cell">
             <div class="table">
@@ -85,9 +94,10 @@
               </p>
             </div>
             <p class="subskills">appdesign / concept creation</p>
-            <a href="AppDesign.html" class="linktoproject"
-              >Go to the project -></a
-            >
+            <p>
+              Discover
+              <a href="AppDesign.html" class="linktoproject">SustainaFit</a>
+            </p>
           </div>
         </div>
         <div class="table-row">
@@ -101,17 +111,22 @@
               </p>
             </div>
             <p class="subskills">app concept</p>
-            <a href="CyclingApp.html" class="linktoproject"
-              >Go to the project -></a
-            >
+            <p>
+              Discover
+              <a href="CyclingApp.html" class="linktoproject">CycleSync</a>
+            </p>
           </div>
           <div class="table-cell-2">
-            <img src="Cycle app.png" alt="Bild 2" />
+            <a href="CyclingApp.html"
+              ><img src="Cycle app.png" alt="Bild 2"
+            /></a>
           </div>
         </div>
         <div class="table-row">
           <div class="table-cell-2">
-            <img src="Mockup 3.png" alt="Bild 1" />
+            <a href="EntrepriseUi.html"
+              ><img src="Mockup 3.png" alt="Bild 1"
+            /></a>
           </div>
           <div class="table-cell">
             <div class="table">
@@ -125,9 +140,12 @@
               </p>
             </div>
             <p class="subskills">webdesign / webapp</p>
-            <a href="EntrepriseUi.html" class="linktoproject"
-              >Go to the project -></a
-            >
+            <p>
+              Discover
+              <a href="EntrepriseUi.html" class="linktoproject"
+                >Autonova Motors</a
+              >
+            </p>
           </div>
         </div>
       </div>
