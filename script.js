@@ -21,3 +21,19 @@ toggleButton.addEventListener("click", () => {
     closeEl.style.display = "none";
   }
 });
+
+//preparation for the content animation on scroll and needs to be styled in css
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) =>
+  console.log(entry)
+  if (entry.isIntersecting) {
+      entry.target.classList.add('show'); //based on the classes of my content
+  } 
+  else {
+      entry.target.classList.remove('show'); //based on the classes of my content
+  });
+});
+
+const hiddenElements = document.querySelectorAll ('.hidden') //based on the classes of my content
+hiddenElements.forEach((el) => observer.observe(el));
