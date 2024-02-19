@@ -355,6 +355,10 @@ img {
   font-size: 14px;
 }
 
+.table a {
+  font-size: 16px;
+}
+
 .subskills {
   margin-bottom: 24px;
   text-transform: uppercase;
@@ -365,6 +369,16 @@ img {
 
 .linktoproject {
   text-decoration: none;
+  transition: 1s;
+  font-style: italic;
+}
+
+.linktoproject:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  font-style: normal;
 }
 
 /* About */
