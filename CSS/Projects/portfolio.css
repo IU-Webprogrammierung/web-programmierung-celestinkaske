@@ -1,0 +1,32 @@
+/* Projects */
+
+.intro {
+  width: auto;
+  height: 450px;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-top: 20px;
+    margin-bottom: 400px;
+  }
+}
+
+.intro h1 {
+  font-size: 48px;
+}
+
+.intro p {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.description {
+  text-align: left;
+  margin-top: 24px;
+  font-weight: 200;
+}

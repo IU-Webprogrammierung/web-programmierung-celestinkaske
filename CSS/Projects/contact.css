@@ -1,0 +1,59 @@
+/* Contact body style */
+
+.contact-intro {
+  margin-bottom: 48px;
+  margin-top: 96px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-intro {
+    margin-top: 20px;
+  }
+}
+
+.contact-intro h1 {
+  margin-bottom: 32px;
+}
+
+.contact-intro p {
+  margin-bottom: 56px;
+  line-height: 2;
+}
+
+.container-contact h2 {
+  margin-bottom: 24px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 24px;
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
