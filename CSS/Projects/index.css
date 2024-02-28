@@ -4,23 +4,29 @@
   height: 450px;
   justify-content: center;
   margin-top: 200px;
-  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 600px) {
   .start {
     margin-top: 20px;
-    margin-bottom: 400px;
+    justify-content: center;
   }
+}
+
+.start h4 {
+  font-weight: 18px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .start p {
   line-height: 2;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 18px;
 }
 
-.start h1.intro-subitle {
+.start h1.intro-subtitle {
   font-size: 28px;
 }
 
@@ -29,6 +35,17 @@
   font-size: 48px;
   display: flex;
   justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .intro-title {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .intro-title-left {
@@ -42,6 +59,16 @@
   margin-bottom: 38px;
   display: flex;
   text-align: center;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro-subtitle {
+    display: flex;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 0px;
+  }
 }
 
 .intro-subtitle-left {
@@ -51,11 +78,11 @@
 }
 
 .description {
-  margin-right: 100px;
   vertical-align: top;
   display: flex;
   justify-content: left;
   gap: 50px;
+  margin-bottom: 224px;
 }
 
 .description h1 {
@@ -68,4 +95,196 @@
 .description p {
   font-size: 16px;
   font-weight: 200;
+}
+
+/* new area */
+
+.center-area {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .center-area {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.how {
+  font-size: 18px;
+  letter-spacing: 0.03rem;
+  color: #5e5e63;
+  margin-bottom: 24px;
+  max-width: 600px;
+  line-height: 170%;
+}
+
+h2 {
+  letter-spacing: -0.01em;
+  background-clip: text;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #5e5e63;
+}
+
+.card {
+  max-width: 900px;
+  background-color: whitesmoke;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 96px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.4s ease-out;
+  display: flex;
+  overflow: hidden;
+  padding: 32px 64px;
+  gap: 32px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    height: auto;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 24px;
+  }
+}
+
+.card-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+}
+
+.card-image {
+  flex: 1;
+  height: 300px;
+}
+
+.small {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.space {
+  width: 8px;
+}
+
+img {
+  flex: 0 auto;
+  display: block;
+}
+
+.project-img {
+  z-index: 0;
+  height: 400px;
+  object-fit: cover;
+  object-position: 60% 100%;
+  border-radius: 16px;
+  align-self: stretch;
+  position: relative;
+  bottom: -32px;
+  right: -64px;
+}
+
+@media screen and (max-width: 991px) {
+  .project-img {
+    height: 300px;
+    bottom: -24px;
+    right: -24px;
+  }
+}
+
+.project-button {
+  box-shadow: none;
+  color: var(--black);
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  transition: color 0.2s;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* icon */
+
+.icon {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 5px solid red;
+  border-radius: 100%;
+  margin-right: 6px;
+  margin-left: -9px;
+}
+
+.icon::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin: 1px 0 0 -6px;
+  display: block;
+  content: "";
+  border: 6px solid transparent;
+  border-top: 10px solid red;
+  border-bottom: none;
+}
+
+/* location-wrapper */
+
+.location-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+@media screen and (max-width: 745px) {
+  .location-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    display: flex;
+  }
 }

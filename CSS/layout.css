@@ -134,6 +134,12 @@ ul.breadcrumb {
   font-size: 12px;
 }
 
+@media screen and (max-width: 991px) {
+  ul.breadcrumb {
+    display: none;
+  }
+}
+
 ul.breadcrumb li {
   display: inline;
 }

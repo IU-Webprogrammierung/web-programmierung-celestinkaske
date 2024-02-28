@@ -21,6 +21,15 @@ main,
   padding: 16px;
 }
 
+main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+}
+
 header {
   margin-top: 20px;
 }
@@ -42,22 +51,31 @@ header {
   font-weight: 100;
 }
 .subtitle h3 {
-  font-size: 48px;
+  font-size: 36px;
   margin-bottom: 50px;
 }
 
 /* Link to project*/
 
 .linktoproject {
+  box-shadow: none;
+  color: var(--black);
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  transition: color 0.2s;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
   text-decoration: none;
   transition: 1s;
-  font-style: italic;
 }
 
 .linktoproject:hover {
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 3px;
-  font-style: normal;
+  background-color: whitesmoke;
 }
