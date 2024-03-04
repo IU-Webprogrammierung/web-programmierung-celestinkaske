@@ -4,11 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lexend Deca", sans-serif;
 }
 
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--body);
   background-color: #fff;
   transition: background-color 0.5s ease;
 }
@@ -51,7 +50,8 @@ header {
   font-weight: 100;
 }
 .subtitle h3 {
-  font-size: 36px;
+  font-size: var(--h2);
+  font-family: var(--title);
   margin-bottom: 50px;
 }
 
@@ -59,23 +59,26 @@ header {
 
 .linktoproject {
   box-shadow: none;
-  color: var(--black);
-  background-color: #fff;
-  border: 2px solid #fff;
+  color: var(--button-text);
+  background-color: var(--button);
   border-radius: 12px;
   justify-content: center;
   align-items: center;
   padding: 15px 24px;
   transition: color 0.2s;
   display: flex;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: var(--sub);
+  font-size: var(--text);
+  font-weight: 500;
   line-height: 140%;
   text-decoration: none;
   transition: 1s;
 }
 
+.linktoproject p {
+  font-weight: 500;
+}
+
 .linktoproject:hover {
-  background-color: whitesmoke;
+  background-color: var(--button-hover);
 }

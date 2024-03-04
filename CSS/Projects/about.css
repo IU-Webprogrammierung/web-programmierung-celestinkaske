@@ -2,9 +2,10 @@
 
 .intro-title {
   margin-bottom: 48px;
-  font-size: 36px;
+  font-size: var(--extreme-h1);
   display: flex;
   justify-content: left;
+  font-family: var(--title);
 }
 
 .intro-subtitle {
@@ -20,7 +21,7 @@
   height: 450px;
   justify-content: center;
   margin-top: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -31,8 +32,8 @@
 
 .start-about p {
   line-height: 2;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: var(--text);
 }
 
 .start-about h1.intro-subitle {
@@ -60,8 +61,8 @@
 .motivation {
   margin-bottom: 96px;
   line-height: 2;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: var(--text);
 }
 
 .practicalknowledge {
@@ -81,18 +82,22 @@
 }
 
 .practicalknowledge h3 {
-  font-size: 24px;
+  font-size: var(--h4);
+  font-family: var(--title);
+  margin-bottom: 8px;
 }
 
 .practicalknowledge h5 {
-  font-size: 16px;
+  font-size: var(--text);
+  font-family: var(--body);
   font-weight: 400;
   opacity: 0.6;
-  margin-bottom: 2px;
+  margin-bottom: -4px;
 }
 
 .practicalknowledge p {
-  font-size: 12px;
+  font-size: var(--text-subtitle);
+  font-family: var(--sub);
 }
 
 .designphilosophy {
@@ -147,7 +152,8 @@
   margin-bottom: 48px;
 
   font-weight: 300;
-  font-size: 18px;
+  font-size: var(--test);
+  font-family: var(--body);
   flex-wrap: wrap;
 }
 
@@ -162,21 +168,21 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 48px;
-  text-transform: uppercase;
   font-weight: 300;
-  font-size: 18px;
+  font-size: var(--test);
+  font-family: var(--body);
 }
 
 .main-body-title {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  font-size: 36px;
+  font-size: var(--h2);
+  font-family: var(--title);
 }
 
 .border-box {
-  border-style: solid;
-  border-color: black;
+  background-color: var(--card);
   border-width: 1px;
   border-radius: 6px;
   padding: 20px;

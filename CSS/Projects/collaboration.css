@@ -17,11 +17,13 @@
   margin-right: 96px;
   margin-bottom: 32px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: var(--text);
+  font-family: var(--body);
 }
 
 .container-title h1 {
-  font-size: 48px;
+  font-size: var(--extreme-h1);
+  font-family: var(--title);
   margin-top: 200px;
 }
 
@@ -94,12 +96,16 @@
 
 .card-front {
   background-color: #fff;
+  font-size: var(--h4);
+  font-family: var(--title);
 }
 
 .card-back {
   background-color: #333;
   color: #fff;
   transform: rotateY(180deg);
+  font-size: var(--text);
+  font-family: var(--body);
 }
 
 .cta {

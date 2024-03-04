@@ -27,15 +27,21 @@ main {
 
 .contact-intro h1 {
   margin-bottom: 32px;
+  font-size: var(--h1);
+  font-family: var(--title);
 }
 
 .contact-intro p {
   margin-bottom: 56px;
   line-height: 2;
+  font-family: var(--body);
+  font-size: var(--text);
 }
 
 .container-contact h2 {
   margin-bottom: 24px;
+  font-size: var(--h2);
+  font-family: var(--title);
 }
 
 form {
@@ -45,6 +51,8 @@ form {
 
 label {
   font-weight: bold;
+  font-family: var(--title);
+  font-size: var(--text);
 }
 
 input,
@@ -54,6 +62,8 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: var(--body);
+  font-size: var(--text-subtitle);
 }
 
 button {
@@ -66,6 +76,8 @@ button {
   font-size: 16px;
   margin-top: 24px;
   transition: 1s;
+  font-family: var(--title);
+  font-size: var(--text);
 }
 
 button:hover {
