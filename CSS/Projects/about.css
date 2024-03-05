@@ -202,6 +202,7 @@
   margin-right: 8px;
   text-transform: none;
   font-family: "Lexend Deca", sans-serif;
+  color: var(--card);
 }
 
 .skills-1 {
