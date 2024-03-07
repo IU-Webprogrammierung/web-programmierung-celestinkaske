@@ -8,6 +8,16 @@
   font-family: var(--title);
 }
 
+@media screen and (max-width: 600px) {
+  .intro-title {
+    margin-bottom: 48px;
+    font-size: var(--h1);
+    display: flex;
+    justify-content: left;
+    font-family: var(--title);
+  }
+}
+
 .intro-subtitle {
   margin-bottom: 38px;
   display: flex;
