@@ -1,0 +1,260 @@
+/* Navbar styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: var(--text-subtitle);
+  font-family: var(--title);
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--button);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  color: black;
+  border-radius: 4px;
+}
+
+.right-section a.active {
+  text-decoration: underline;
+  text-decoration-color: var(--button);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-toggle .bar {
+  height: 4px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 3px 0px;
+}
+
+.navbar-toggle #close-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .navbar {
+  }
+
+  .right-section {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    top: 70px;
+    left: 0;
+  }
+
+  .right-section a {
+    padding: 12px 15px;
+  }
+
+  .right-section.active {
+    display: flex;
+  }
+}
+
+.left-section a:before {
+  animation: continue 4.5s infinite linear;
+  content: "";
+  position: absolute;
+  height: 0.2em;
+  width: 30px;
+  background: linear-gradient(
+    to right,
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7
+  );
+  background-size: 200% 100%;
+  margin-top: 26px;
+  transition: 1.5s;
+}
+
+@keyframes continue {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.left-section a:hover:before {
+  background-position: 100% 0%;
+}
+
+@media all and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+/* Breadcrumb styles */
+
+ul.breadcrumb {
+  max-width: 1600px;
+  margin: auto;
+  list-style: none;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-size: var(--text-subtitle);
+  font-family: var(--title);
+}
+
+@media screen and (max-width: 991px) {
+  ul.breadcrumb {
+    display: none;
+  }
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 5px;
+  color: black;
+  content: "/";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  ul.breadcrumb {
+    display: none;
+  }
+}
+
+/* Table */
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.table-cell {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.table-cell-wireframe {
+  flex: 1;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  overflow: hidden;
+  border-color: #333;
+  box-shadow: 5px 5px 5px;
+}
+
+.table-cell-wireframe:hover {
+  flex: 1;
+  box-sizing: border-box;
+  transform: scale(1.05);
+}
+
+.table-cell-2 {
+  flex: 1;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+}
+
+.table-cell-2:hover {
+  flex: 1;
+  box-sizing: border-box;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .table-cell-2 {
+    order: 2;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.table h2 {
+  margin-bottom: 12px;
+  font-size: var(--h3);
+}
+
+.table p {
+  margin-bottom: 12px;
+  font-size: var(--text);
+}
+
+.table a {
+  font-size: var(--text);
+}
+
+.subskills {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 600px) {
+  .table-cell {
+    flex: 1 0 100%;
+  }
+}

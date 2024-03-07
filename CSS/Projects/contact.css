@@ -1,0 +1,85 @@
+/* Contact body style */
+
+main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+}
+.contact-intro {
+  margin-bottom: 48px;
+  margin-top: 96px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-intro {
+    margin-top: 20px;
+  }
+}
+
+.contact-intro h1 {
+  margin-bottom: 32px;
+  font-size: var(--h1);
+  font-family: var(--title);
+}
+
+.contact-intro p {
+  margin-bottom: 56px;
+  line-height: 2;
+  font-family: var(--body);
+  font-size: var(--text);
+}
+
+.container-contact h2 {
+  margin-bottom: 24px;
+  font-size: var(--h2);
+  font-family: var(--title);
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-family: var(--title);
+  font-size: var(--text);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--body);
+  font-size: var(--text-subtitle);
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 24px;
+  transition: 1s;
+  font-family: var(--title);
+  font-size: var(--text);
+}
+
+button:hover {
+  transform: scale(1.05);
+}

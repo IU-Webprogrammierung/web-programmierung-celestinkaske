@@ -198,6 +198,7 @@ ul.breadcrumb li a:hover {
 /* Main body style */
 
 .start {
+  display: flex;
   width: auto;
   height: 450px;
   justify-content: center;
@@ -225,16 +226,21 @@ ul.breadcrumb li a:hover {
 .intro-title {
   margin-bottom: 48px;
   font-size: 48px;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-subtitle {
   margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
-  display: inline-block;
   margin-right: 100px;
   vertical-align: top;
+  display: flex;
+  justify-content: center;
 }
 
 .description h1 {
@@ -282,7 +288,7 @@ ul.breadcrumb li a:hover {
   font-weight: 200;
 }
 
-/* Homepage */
+/* Table */
 
 .table-container {
   display: flex;
@@ -743,11 +749,5 @@ button:hover {
 @media screen and (max-width: 600px) {
   .table-cell {
     flex: 1 0 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container-container {
-    padding: 10px;
   }
 }

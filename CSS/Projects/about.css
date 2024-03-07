@@ -1,0 +1,264 @@
+/* About */
+
+.intro-title {
+  margin-bottom: 48px;
+  font-size: var(--extreme-h1);
+  display: flex;
+  justify-content: left;
+  font-family: var(--title);
+}
+
+@media screen and (max-width: 600px) {
+  .intro-title {
+    margin-bottom: 48px;
+    font-size: var(--h1);
+    display: flex;
+    justify-content: left;
+    font-family: var(--title);
+  }
+}
+
+.intro-subtitle {
+  margin-bottom: 38px;
+  display: flex;
+  text-align: left;
+}
+
+.start-about {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .start-about {
+    margin-top: 24px;
+  }
+}
+
+.start-about p {
+  line-height: 2;
+  font-weight: 400;
+  font-size: var(--text);
+}
+
+.start-about h1.intro-subitle {
+  font-size: 28px;
+}
+
+.left-side {
+  width: 60%;
+}
+
+.right-side {
+  width: 40%;
+}
+
+.right-side img {
+  margin-right: -24px;
+}
+
+@media screen and (max-width: 600px) {
+  .right-side img {
+    margin-right: 12px;
+  }
+}
+
+.motivation {
+  margin-bottom: 96px;
+  line-height: 2;
+  font-weight: 400;
+  font-size: var(--text);
+}
+
+.practicalknowledge {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: auto;
+  margin-bottom: 140px;
+  line-height: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .practicalknowledge {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.practicalknowledge h3 {
+  font-size: var(--h4);
+  font-family: var(--title);
+  margin-bottom: 8px;
+}
+
+.practicalknowledge h5 {
+  font-size: var(--text);
+  font-family: var(--body);
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: -4px;
+}
+
+.practicalknowledge p {
+  font-size: var(--text-subtitle);
+  font-family: var(--sub);
+}
+
+.designphilosophy {
+  gap: 20px;
+  margin: auto;
+  width: 1000px;
+  line-height: 1.6;
+}
+
+.designphilosophy h3 {
+  flex: 1;
+}
+
+.designphilosophy img {
+  width: 100%;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 96px;
+  margin-bottom: 88px;
+  line-height: 1.6;
+}
+
+.background a {
+  flex: 1;
+  font-weight: 50;
+}
+
+.designphilosophy img {
+  width: 100%;
+}
+
+.skills-n-roles {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-n-roles {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.skills {
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  font-weight: 300;
+  font-size: var(--test);
+  font-family: var(--body);
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.roles {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: var(--test);
+  font-family: var(--body);
+}
+
+.main-body-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: var(--h2);
+  font-family: var(--title);
+}
+
+.border-box {
+  background-color: var(--card);
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ddd;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: right;
+  margin-right: 4px;
+}
+
+.container p {
+  margin-right: 8px;
+  text-transform: none;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--card);
+}
+
+.skills-1 {
+  width: 90%;
+  background-color: #cf2e2e;
+  border-radius: 4px;
+}
+.skills-2 {
+  width: 85%;
+  background-color: #f76915;
+  border-radius: 4px;
+}
+.skills-4 {
+  width: 80%;
+  background-color: #eede04;
+  border-radius: 4px;
+}
+.skills-5 {
+  width: 65%;
+  background-color: #a0d636;
+  border-radius: 4px;
+}
+.skills-6 {
+  width: 80%;
+  background-color: #2fa236;
+  border-radius: 4px;
+}
+
+.skills-7 {
+  width: 70%;
+  background-color: #5c65dd;
+  border-radius: 4px;
+}
+
+.role-1 {
+  width: 100%;
+  background-color: #9381ff;
+  border-radius: 4px;
+}
+.role-2 {
+  width: 90%;
+  background-color: #9381ff;
+  border-radius: 4px;
+}
+.role-3 {
+  width: 90%;
+  background-color: #9381ff;
+  border-radius: 4px;
+}

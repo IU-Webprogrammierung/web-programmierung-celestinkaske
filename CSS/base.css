@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body);
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+footer,
+main,
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+}
+
+header {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+}
+
+/* Text Styles*/
+
+.table {
+  line-height: 2;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: 100;
+}
+.subtitle h3 {
+  font-size: var(--h2);
+  font-family: var(--title);
+  margin-bottom: 50px;
+}
+
+/* Link to project*/
+
+.linktoproject {
+  box-shadow: none;
+  color: var(--button-text);
+  background-color: var(--button);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  transition: color 0.2s;
+  display: flex;
+  font-family: var(--sub);
+  font-size: var(--text);
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.linktoproject p {
+  font-weight: 500;
+}
+
+.linktoproject:hover {
+  background-color: var(--button-hover);
+}
