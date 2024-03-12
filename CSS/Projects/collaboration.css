@@ -35,18 +35,29 @@
 }
 
 .container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: 96px;
-  margin-right: 96px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1055px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .card {
   perspective: 1000px;
-  width: 300px;
+  width: 100%;
   height: 400px;
-  margin: 10px;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -76,6 +87,7 @@
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  font-size: var(--h4);
 }
 
 .card-front,
@@ -101,11 +113,12 @@
 }
 
 .card-back {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--button);
+  color: var(--text);
   transform: rotateY(180deg);
   font-size: var(--text);
   font-family: var(--body);
+  line-height: 1.5;
 }
 
 .cta {
@@ -121,7 +134,8 @@
   background-color: #333;
   padding: 24px;
   margin-top: 88px;
-  width: 600px;
+  width: 400px;
+  border-radius: 8px;
 }
 
 .cta .cta-button h3 {
