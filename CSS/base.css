@@ -34,13 +34,13 @@ header {
 }
 
 footer {
-  background-color: #333;
+  background-color: var(--button);
   color: #fff;
   text-align: center;
-  padding: 20px;
-  position: fixed;
   bottom: 0;
-  width: 100%;
+  padding: 40px;
+  margin-top: 120px;
+  min-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -69,26 +69,27 @@ footer {
 
 .linktoproject {
   box-shadow: none;
-  color: var(--button-text);
+  color: #fff;
   background-color: var(--button);
   border-radius: 12px;
   justify-content: center;
   align-items: center;
   padding: 15px 24px;
-  transition: color 0.2s;
+  transition: color 0.9s;
   display: flex;
   font-family: var(--sub);
   font-size: var(--text);
   font-weight: 500;
   line-height: 140%;
   text-decoration: none;
-  transition: 1s;
 }
 
 .linktoproject p {
   font-weight: 500;
+  color: #fff;
 }
 
 .linktoproject:hover {
   background-color: var(--button-hover);
+  color: var(--text);
 }

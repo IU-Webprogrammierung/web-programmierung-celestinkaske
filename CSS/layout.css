@@ -199,7 +199,7 @@ ul.breadcrumb li a:hover {
   border-width: 1px;
   overflow: hidden;
   border-color: #333;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 2px 2px 2px;
 }
 
 .table-cell-wireframe:hover {

@@ -14,11 +14,12 @@
   --body: "Nunito", sans-serif;
   --sub: "Montserrat", sans-serif;
 
-  --card: #f5f5f5;
+  --card: #f7f7f7;
   --card-hover: #fcfcfc;
-  --box: #fefefe;
-  --button: #e2725b;
-  --button-text: white;
-  --button-hover: #d25c49;
-  --text: #0e0202;
+  --box: #fcf1e4;
+  --button: #7885ff;
+  --button-text: fcf1e4;
+  --button-hover: #b7c8e9;
+  --accent: #e7f53c;
+  --text: #1f211f;
 }
