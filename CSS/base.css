@@ -8,7 +8,7 @@
 
 body {
   font-family: var(--body);
-  background-color: #fff;
+  background-color: var(--background);
   transition: background-color 0.5s ease;
 }
 
