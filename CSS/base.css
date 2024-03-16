@@ -8,7 +8,7 @@
 
 body {
   font-family: var(--body);
-  background-color: #fff;
+  background-color: var(--background);
   transition: background-color 0.5s ease;
 }
 
@@ -69,27 +69,51 @@ footer {
 
 .linktoproject {
   box-shadow: none;
-  color: #fff;
+  color: var(--text-hover);
   background-color: var(--button);
   border-radius: 12px;
   justify-content: center;
   align-items: center;
   padding: 15px 24px;
-  transition: color 0.9s;
+  transition: color 0.5s;
   display: flex;
   font-family: var(--sub);
   font-size: var(--text);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 140%;
   text-decoration: none;
 }
 
 .linktoproject p {
-  font-weight: 500;
-  color: #fff;
+  font-weight: 700;
+  color: var(--text-hover);
 }
 
 .linktoproject:hover {
   background-color: var(--button-hover);
   color: var(--text);
+}
+.linktoproject p:hover {
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Transitions*/
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2.4s;
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

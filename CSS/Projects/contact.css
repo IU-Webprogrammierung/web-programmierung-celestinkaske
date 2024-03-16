@@ -78,6 +78,7 @@ button {
   transition: 1s;
   font-family: var(--title);
   font-size: var(--text);
+  font-weight: 700;
 }
 
 button:hover {
