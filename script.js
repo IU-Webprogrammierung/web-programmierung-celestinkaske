@@ -29,9 +29,10 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show"); //based on the classes of my content
-    } else {
-      entry.target.classList.remove("show"); //based on the classes of my content
     }
+    // else {
+    //   entry.target.classList.remove("show"); //based on the classes of my content
+    // }
   });
 });
 
